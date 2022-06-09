@@ -9,5 +9,5 @@ class Empresa extends Model
 {
    protected $table = 'empresas';
 
-    protected $fillable = ['nome', 'cnpj'];
+    protected $fillable = ['nome', 'cnpj','foto'];
 }

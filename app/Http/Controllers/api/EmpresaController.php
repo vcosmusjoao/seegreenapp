@@ -17,6 +17,7 @@ class EmpresaController extends Controller
         $empresa = new Empresa;
         $empresa->nome = $request->nome;
         $empresa->cnpj = $request->cnpj;
+        $empresa->foto = $request->foto;
         $empresa->save();
     
         return response()->json([
