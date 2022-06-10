@@ -17,6 +17,7 @@ class EmpresaController extends Controller
         $empresa = new Empresa;
         $empresa->nome = $request->nome;
         $empresa->cnpj = $request->cnpj;
+        $empresa->descricao = $request->descricao;
         $empresa->foto = $request->foto;
         $empresa->save();
     

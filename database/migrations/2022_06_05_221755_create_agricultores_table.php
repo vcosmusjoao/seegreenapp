@@ -9,10 +9,9 @@ return new class extends Migration
 
     public function up()
     {
-        Schema::create('empresas', function (Blueprint $table) {
+        Schema::create('agricultores', function (Blueprint $table) {
             $table->id();
  	        $table->string('nome');
-            $table->string('cnpj');
             $table->string('descricao');
             $table->string('foto');
             $table->timestamp('created_at')->nullable();
@@ -23,6 +22,6 @@ return new class extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('agricultores');
+        Schema::dropIfExists('empresas');
     }
 };
